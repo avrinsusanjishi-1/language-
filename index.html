@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IELTS Kerala Pro Coach | Malayalam to Professional English</title>
+  <meta name="description" content="A Kerala-focused IELTS and professional English teacher app for Malayalam speakers with active lessons, feedback, audio, speaking practice, formal English, idioms, and mock tests." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="bg-orb orb-one"></div>
+  <div class="bg-orb orb-two"></div>
+
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#home" aria-label="IELTS Kerala Pro home">
+        <span class="brand-mark">IK</span>
+        <span>
+          <strong>IELTS Kerala Pro</strong>
+          <small>Teacher + Coach</small>
+        </span>
+      </a>
+
+      <nav class="side-nav" id="sideNav" aria-label="Main navigation">
+        <a href="#home" data-page="home">🏠 Home</a>
+        <a href="#dashboard" data-page="dashboard">📊 Dashboard</a>
+        <a href="#classroom" data-page="classroom">🎓 Daily Classroom</a>
+        <a href="#listening" data-page="listening">🎧 Listening</a>
+        <a href="#reading" data-page="reading">📖 Reading</a>
+        <a href="#writing" data-page="writing">✍️ Writing</a>
+        <a href="#speaking" data-page="speaking">🎙 Speaking</a>
+        <a href="#conference" data-page="conference">🎤 Conference Mode</a>
+        <a href="#accent" data-page="accent">🗣 Accent Coach</a>
+        <a href="#formal" data-page="formal">🏛 Formal English</a>
+        <a href="#idioms" data-page="idioms">💬 Idiom Gym</a>
+        <a href="#mock" data-page="mock">🧪 Mock Test</a>
+        <a href="#resources" data-page="resources">📚 Resources</a>
+      </nav>
+
+      <div class="sidebar-card">
+        <p class="eyebrow">Today’s Mission</p>
+        <strong id="sideMission">Speak 60 seconds clearly</strong>
+        <small>Earn XP by finishing practice, not by reading instructions.</small>
+      </div>
+    </aside>
+
+    <div class="main-shell">
+      <header class="topbar">
+        <button class="icon-btn" id="menuBtn" aria-label="Open navigation menu">☰</button>
+        <div class="search-box">
+          <span>⌕</span>
+          <input id="globalSearch" type="search" placeholder="Search lessons, idioms, phrases, IELTS tasks..." autocomplete="off" />
+        </div>
+        <div class="top-actions">
+          <button class="chip-btn" id="audioTestBtn">🔊 Test audio</button>
+          <button class="chip-btn" id="themeBtn">🌙 Theme</button>
+          <button class="chip-btn danger" onclick="App.resetProgress()">Reset</button>
+        </div>
+      </header>
+      
+
+
+   
+
+</main>
+
+      <main id="app" tabindex="-1"></main>
+    </div>
+  </div>
+
+  <div class="floating-coach" id="floatingCoach" aria-live="polite">
+    <button class="coach-toggle" id="coachToggle">🤖 Coach</button>
+    <div class="coach-panel hidden" id="coachPanel">
+      <strong>Kerala English Coach</strong>
+      <p id="coachTip">Use a clear structure: answer, reason, example, closing.</p>
+      <button class="mini-btn" onclick="App.randomCoachTip()">New tip</button>
+    </div>
+  </div>
+
+  <div class="toast-area" id="toastArea" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+
+
+  </div>
+</section>
+</body>
+</html>
